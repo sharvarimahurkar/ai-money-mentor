@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AI Money Mentor</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<div class="container">
+    <h2>AI Money Mentor</h2>
+
+    <form method="POST">
+        <input type="number" name="age" placeholder="Age"><br>
+        <input type="number" name="income" placeholder="Monthly Income"><br>
+        <input type="number" name="expenses" placeholder="Monthly Expenses"><br>
+        <input type="text" name="goal" placeholder="Goal"><br>
+
+        <button type="submit">Generate Advice</button>
+    </form>
+
+    <h3>{{ advice }}</h3>
+</div>
+
+</body>
+</html>
